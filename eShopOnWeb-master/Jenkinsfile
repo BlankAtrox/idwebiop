@@ -1,0 +1,25 @@
+#!groovy
+
+pipeline 
+{
+    
+    options {
+          timestamps()
+    }
+
+    stages {
+        
+        stage("Build")
+        {
+            echo "Sunt aici etapa Build"
+        }
+        
+        stage("Testing")
+        {
+            echo "Sunt aici etapa Test"
+        }
+        
+        
+    }
+
+}
