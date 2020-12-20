@@ -1,21 +1,30 @@
 #!groovy
 
-pipeline {
-  agent any
-  stages {
-  stage('Stage 1') {
-      steps {
-        script {
-          echo 'Stage 1'
-        }
-      }
+pipeline 
+{
+    
+    options {
+          timestamps()
     }
-  stage('Stage 2') {
-      steps {
-        script {
-          echo 'Stage 2'
+
+    stages {
+        
+        stage("Build")
+        {
+            steps{
+                
+                     echo "Sunt aici etapa Build"
+            }
         }
-      }
+        
+        stage("Testing")
+        {
+            steps{
+                    echo "Sunt aici etapa Test"
+            }
+        }
+        
+        
     }
-  }
+
 }
