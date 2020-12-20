@@ -11,12 +11,17 @@ pipeline
         
         stage("Build")
         {
-            echo "Sunt aici etapa Build"
+            steps{
+                
+                     echo "Sunt aici etapa Build"
+            }
         }
         
         stage("Testing")
         {
-            echo "Sunt aici etapa Test"
+            steps{
+                    echo "Sunt aici etapa Test"
+            }
         }
         
         
